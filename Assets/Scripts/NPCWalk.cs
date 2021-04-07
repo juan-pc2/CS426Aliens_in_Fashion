@@ -8,20 +8,29 @@ public class NPCWalk : MonoBehaviour
     private Transform destinationTransform;
     private Transform currentTransform;
     public float moveSpeed;
+    private bool animationDone = false;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         currentTransform = GetComponent<Transform>();
         destinationTransform = destination.GetComponent<Transform>();
         moveSpeed = 0.10f;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         currentTransform.position = Vector3.MoveTowards(currentTransform.position, destinationTransform.position, moveSpeed);
+        anim.Play("Walking");
         if(currentTransform.position == destinationTransform.position)
         {
+            anim.Play("Waving");
+            animationDone=true;
+        }
+        if(animationDone){
+            animationDone=false;
             Destroy(gameObject);
             Destroy(destination.gameObject);
         }

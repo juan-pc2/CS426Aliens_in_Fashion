@@ -35,6 +35,10 @@ public class UIManage : MonoBehaviour
 	[SerializeField] private GameObject FashionItem; //eventually randomize
 	Vector3 infront = new Vector3(0, 2, 0);
 
+	public GameObject model;
+	public GameObject recruit;
+	private Vector3 recruitpos;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -85,6 +89,12 @@ public class UIManage : MonoBehaviour
 			score = score + 2;
 			scoreText.text = "Score: " + score;
 			numAliensHired++;
+			if (numAliensHired==1) Instantiate(recruit, transform.position, transform.rotation);
+			else {
+				recruitpos = transform.position - transform.forward;
+				Instantiate(recruit, recruitpos, transform.rotation);
+			}
+
 		}
 		else
 		{
@@ -150,6 +160,10 @@ public class UIManage : MonoBehaviour
 				removeTextTime = showTextTime + Time.time;
 				score = score + 3;
 				scoreText.text = "Score: " + score;
+				numAliensHired = numAliensHired - 3;
+				Instantiate(model, transform.position+transform.forward, transform.rotation);
+				Instantiate(model, transform.position+transform.forward+transform.right, transform.rotation);
+				Instantiate(model, transform.position+transform.forward-transform.right, transform.rotation);
 			}
 			else
 			{
