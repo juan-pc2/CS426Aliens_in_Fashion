@@ -7,7 +7,7 @@ public class NPCWalk : MonoBehaviour
     public GameObject destination;
     private Transform destinationTransform;
     private Transform currentTransform;
-    public float moveSpeed;
+    public float moveSpeed = 0.1f;
     private bool animationDone = false;
     Animator anim;
     // Start is called before the first frame update
@@ -15,7 +15,6 @@ public class NPCWalk : MonoBehaviour
     {
         currentTransform = GetComponent<Transform>();
         destinationTransform = destination.GetComponent<Transform>();
-        moveSpeed = 0.10f;
         anim = GetComponent<Animator>();
     }
 
