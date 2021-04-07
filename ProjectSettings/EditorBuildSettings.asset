@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Aliens_Fashion.unity
-    guid: 36b8b41466b9c95479048aaaabfa1611
+    path: Assets/Aliens_Fashion.unity
+    guid: 83003f6c4516c9b4a9a307d267e05e05
   m_configObjects: {}
