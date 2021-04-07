@@ -4,6 +4,14 @@ Group Members: Elaine Guan, Juan Camacho, Zainab Mohammad, Nick Magaru
 
 "Aliens in Fashion" is a turn-based collecting computer game or board game for people ages 6 and up. In this game, players manage aliens and fashion items, dress up aliens, and host fashion shows. There are 4 planets with various fashion items and different types of aliens to be hired from.
 
+There are three animated Mechanims: a rigged faceless alien that is the player, model aliens which are of the player's type or ones that wear a dress, and human enemies.
+
+To follow other characters, humans and aliens both use Finite State Machines. In addition, humans use a flocking mechanism to populate and move through the graph and create a path towards the player.
+
+Each map has different textures to symbolize different planet terrains. Unique textures on every map makes the gameplay challenging and actions that can be unlocked based on how many points are earned keep the user interested. Some maps have lights to light up darker corners. A distinct combination of medium sized paths along with narrow hallways and large areas on each map create an interesting and challenging map where the user must strategize their movements to get from vulnerable areas to safe areas. 
+
+Others have particle systems, according to each theme. Other physics used include colliders used by an enemy character and Rigid Bodies on objects that are required to be solid, such as walls.
+
 ## Credits
 
 Unity Assets:  
