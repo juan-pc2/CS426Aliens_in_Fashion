@@ -9,6 +9,8 @@ Group Members: Elaine Guan, Juan Camacho, Zainab Mohammad, Nick Magaru
 Unity Assets:  
 <a href="https://assetstore.unity.com/packages/2d/textures-materials/texture-glass-transparent-window-182052">Texture Glass Transparent Window by GlowFox Games</a>  
 <a href="https://assetstore.unity.com/publishers/40099">Urban Night Sky by Kendall Weaver</a>  
+<a href="https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi/free-animated-space-man-61548">Free Animated Space Man by HONETi</a>  
+<a href="https://assetstore.unity.com/packages/vfx/particles/sherbb-s-particle-collection-170798">Sherbb's Particle Collection by Shrebb</a>  
 
 Texture/Pattern Images:  
 <a href="https://www.freepik.com/free-photo/stone-wall-texture-background-vintage-filter_1273893.htm#page=1&query=stone%20pattern&position=42">Stone wall texture or background - vintage filter by aopsan</a>  
