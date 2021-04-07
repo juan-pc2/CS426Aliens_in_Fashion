@@ -1,0 +1,12 @@
+﻿* Networking
+   * Ensuring that multiple players can play the game at once.
+   * Tuesday by 12pm
+   * 2 hours
+* Player Order
+   * Ensuring that the players are able to take turns.
+   * Wednesday by 12am
+   * 3 hours
+* Button functionality between turns
+   * Making sure the buttons only work for the current player.
+   * Wednesday by 7pm
+   * 4 hours

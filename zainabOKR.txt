@@ -1,0 +1,6 @@
+Schedule and deliverable:
+	code for creating a round-based game rounds --Tue by 8pm (estimate: 2hr)
+	code for text appearing only for a short time when round starts --Tue by 11:59 (estimate: 2hr)
+	random result and text when special action button is pressed --Tue by 11:59 (estimate: 2hr)
+	code to create "walking" aliens if fashion show result --Wed 3pm(estimate: 5hr)
+	code to make object appear for a short time in front of player --Wed 1pm(estimate: 2hr)

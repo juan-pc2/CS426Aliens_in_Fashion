@@ -1,0 +1,7 @@
+Schedule and deliverable:
+
+character model and movement -- Mon by 1pm (estimate: 1 hr)
+plane and doorways; add more to layout/map for planets -- Tues by 9pm (estimate: 2 hrs)
+create 3 buttons for choices -- Tues by 11:59 pm (estimate: 2 hrs)
+create text on screen that react to buttons -- Wed by 12pm (estimate: 3 hrs)
+point calculation and display -- Wed by 3pm (estimate: 3-4 hrs)
