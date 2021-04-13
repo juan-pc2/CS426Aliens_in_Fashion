@@ -30,10 +30,12 @@ public class Teleport : MonoBehaviour
     bool openPortal()
     {
         if (UIScript.numAliensHired > 0 && UIScript.fashionItems >= 3)
+        {
+            UIScript.numAliensHired = 0;
+            UIScript.fashionItems = 0;
             return true;
+        }
 
         return false;
     }
 }
-
-
