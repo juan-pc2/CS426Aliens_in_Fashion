@@ -17,7 +17,6 @@ public class Teleport : MonoBehaviour
     {
         destination = destinationPortal.GetComponent<Transform>();
         UIScript = UIObject.GetComponent<UIManage>();
-        alwaysOpen = true;
     }
 
     void OnTriggerEnter(Collider player)
@@ -30,7 +29,7 @@ public class Teleport : MonoBehaviour
 
     bool openPortal()
     {
-        if (UIScript.numAliensHired >= 1 && UIScript.fashionItems >= 3)
+        if (UIScript.numAliensHired > 0 && UIScript.fashionItems >= 3)
             return true;
 
         return false;
