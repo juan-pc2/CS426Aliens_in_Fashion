@@ -20,6 +20,9 @@ Unity Assets:
 <a href="https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi/free-animated-space-man-61548">Free Animated Space Man by HONETi</a>  
 <a href="https://assetstore.unity.com/packages/vfx/particles/sherbb-s-particle-collection-170798">Sherbb's Particle Collection by Shrebb</a>  
 
+Font:  
+<a href="https://fonts.google.com/specimen/Play#standard-styles">Play by Jonas Hecksher</a>  
+
 Texture/Pattern Images:  
 <a href="https://www.freepik.com/free-photo/stone-wall-texture-background-vintage-filter_1273893.htm#page=1&query=stone%20pattern&position=42">Stone wall texture or background - vintage filter by aopsan</a>  
 <a href="https://www.freepik.com/free-photo/tropical-green-leaves-background_4102585.htm#page=1&query=green%20wall&position=40">Tropical green leaves background by rawpixel.com</a>  
@@ -40,5 +43,12 @@ Sounds and Music:
 Scripts:  
 <a href="https://www.theappguruz.com/blog/ai-implementation-using-finite-state-machine-model">How to ace the FINITE State Machine Model in Unity AI Implementation by Rudra Gesota</a>  
 <a href="https://gist.github.com/canyuva/8338f1cf679440f7950313e85718e006">Unity 5 Enemy Follow to Player C# Script by canyuva</a>  
-<a href="http://wiki.unity3d.com/index.php?title=Flocking">Flocking by shinriyo & Benoit FOULETIER</a>
-<a href="https://www.youtube.com/watch?v=fnBPh35Bwwc">HOW TO CREATE PORTALS WITH UNITY AND C# - EASY TUTORIAL by Blackthornprod</a>
+<a href="http://wiki.unity3d.com/index.php?title=Flocking">Flocking by shinriyo & Benoit FOULETIER</a>  
+<a href="https://www.youtube.com/watch?v=fnBPh35Bwwc">HOW TO CREATE PORTALS WITH UNITY AND C# - EASY TUTORIAL by Blackthornprod</a>  
+
+## Assignment 8
+
+UI Design:  
+-Colors of buttons and text are too saturated and does not match the textures and other parts of the game (Modified by adding and using a new font to fit the game theme better and editing the colors of the buttons and text)  
+-Text size of score and results of the actions may be too small (Modified by changing the sizes of the text and changing the position + spacing of the buttons)  
+-There are no initial instructions on how to play the game, so the user may be confused on what the objectives and controls are  
