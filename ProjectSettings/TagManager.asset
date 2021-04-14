@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - WanderPoint
+  - WanderPoint1
+  - WanderPoint2
+  - WanderPoint3
+  - WanderPoint4
   layers:
   - Default
   - TransparentFX

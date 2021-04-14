@@ -12,6 +12,7 @@ public class EnemyFSM : FSM
     }
 
     public FSMState curState;
+    public int planetNum;
     private float curSpeed;
     private float curRotateSpeed;
     
@@ -19,22 +20,37 @@ public class EnemyFSM : FSM
     {
         curState = FSMState.Patrol;
         curSpeed = 5.0f;
-        curRotateSpeed = 1.5f;
-
-        pointList = GameObject.FindGameObjectsWithTag("WanderPoint");
+        curRotateSpeed = 3.0f;
+        
+        switch (planetNum)
+        {
+            case 1:
+                pointList = GameObject.FindGameObjectsWithTag("WanderPoint1");
+                break;
+            case 2:
+                pointList = GameObject.FindGameObjectsWithTag("WanderPoint2");
+                break;
+            case 3:
+                pointList = GameObject.FindGameObjectsWithTag("WanderPoint3");
+                break;
+            case 4:
+                pointList = GameObject.FindGameObjectsWithTag("WanderPoint4");
+                break;
+            default:
+                break;
+        }
 
         FindNextPoint();
+    }
 
+    protected override void FSMUpdate()
+    {
         GameObject objPlayer = GameObject.FindGameObjectWithTag("Player");
         playerTransform = objPlayer.transform;
 
         if (!playerTransform)
             print("Player doesn't exist");
 
-    }
-
-    protected override void FSMUpdate()
-    {
         switch (curState)
         {
             case FSMState.Patrol:
@@ -53,7 +69,7 @@ public class EnemyFSM : FSM
             print("Reached destination");
             FindNextPoint();
         }
-        else if (Vector3.Distance(transform.position, playerTransform.position) <= 15.0f)
+        else if (playerTransform && Vector3.Distance(transform.position, playerTransform.position) <= 15.0f)
         {
             print("Switch to Chase state");
             curState = FSMState.Chase;
