@@ -41,4 +41,4 @@ Scripts:
 <a href="https://www.theappguruz.com/blog/ai-implementation-using-finite-state-machine-model">How to ace the FINITE State Machine Model in Unity AI Implementation by Rudra Gesota</a>  
 <a href="https://gist.github.com/canyuva/8338f1cf679440f7950313e85718e006">Unity 5 Enemy Follow to Player C# Script by canyuva</a>  
 <a href="http://wiki.unity3d.com/index.php?title=Flocking">Flocking by shinriyo & Benoit FOULETIER</a>
-<a href="https://www.youtube.com/watch?v=fnBPh35Bwwc">HOW TO CREATE PORTALS WITH UNITY AND C# - EASY TUTORIA by BlackthornprodL</a>
+<a href="https://www.youtube.com/watch?v=fnBPh35Bwwc">HOW TO CREATE PORTALS WITH UNITY AND C# - EASY TUTORIAL by Blackthornprod</a>
