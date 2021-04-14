@@ -52,3 +52,7 @@ UI Design:
 -Colors of buttons and text are too saturated and does not match the textures and other parts of the game (Modified by adding and using a new font to fit the game theme better and editing the colors of the buttons and text)  
 -Text size of score and results of the actions may be too small (Modified by changing the sizes of the text and changing the position + spacing of the buttons)  
 -There are no initial instructions on how to play the game, so the user may be confused on what the objectives and controls are  
+
+Sound Design:  
+See Sounds and Music credits and Design Document.  
+
