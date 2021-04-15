@@ -8,8 +8,6 @@ using UnityEngine.Networking;
 // MonoBehavior is the base class from which every Unity Script Derives
 public class PlayerMovement : NetworkBehaviour
 {
-    public float speed = 25.0f;
-    public float rotationSpeed = 50.0f;
     public float force = 700f;
 
     Rigidbody rb;
@@ -23,6 +21,7 @@ public class PlayerMovement : NetworkBehaviour
         rb = GetComponent<Rigidbody>();
         t = GetComponent<Transform>();
         anim = GetComponent<Animator>();
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
@@ -44,13 +43,10 @@ public class PlayerMovement : NetworkBehaviour
 
         // Quaternion returns a rotation that rotates x degrees around the x axis and so on
         if (Input.GetKey(KeyCode.D)){
-            this.t.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+            this.t.Rotate(Vector3.up * Time.deltaTime, 6.0f);
         }
         else if (Input.GetKey(KeyCode.A)){
-            this.t.Rotate(-Vector3.up * rotationSpeed * Time.deltaTime);
+            this.t.Rotate(-Vector3.up * Time.deltaTime, 6.0f);
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            rb.AddForce(t.up * force);
     }
 }
