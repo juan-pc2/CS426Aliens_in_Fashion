@@ -2057,7 +2057,7 @@ MonoBehaviour:
   randomness: 1
   flockSize: 20
   prefab: {fileID: 1112338128624330, guid: e7965cb5f3b6b49439772edd4131b2b0, type: 3}
-  chasee: {fileID: 0}
+  chasee: {fileID: 5587217149191248387, guid: f9c55b75eccf58145a759920b37d7e2d, type: 3}
   flockCenter: {x: 0, y: 0, z: 0}
   flockVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &167959573
@@ -7509,7 +7509,7 @@ MonoBehaviour:
   randomness: 1
   flockSize: 20
   prefab: {fileID: 1112338128624330, guid: e7965cb5f3b6b49439772edd4131b2b0, type: 3}
-  chasee: {fileID: 0}
+  chasee: {fileID: 5587217149191248387, guid: f9c55b75eccf58145a759920b37d7e2d, type: 3}
   flockCenter: {x: 0, y: 0, z: 0}
   flockVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &781262590
@@ -7832,7 +7832,7 @@ MonoBehaviour:
   randomness: 1
   flockSize: 20
   prefab: {fileID: 1112338128624330, guid: e7965cb5f3b6b49439772edd4131b2b0, type: 3}
-  chasee: {fileID: 0}
+  chasee: {fileID: 5587217149191248387, guid: f9c55b75eccf58145a759920b37d7e2d, type: 3}
   flockCenter: {x: 0, y: 0, z: 0}
   flockVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &829897520
@@ -9342,7 +9342,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 3405940381857344958, guid: 60cdc06be42b3444fa83a224df6fbff8,
+  m_PlayerPrefab: {fileID: 5587217149191248387, guid: f9c55b75eccf58145a759920b37d7e2d,
     type: 3}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
@@ -14140,7 +14140,7 @@ MonoBehaviour:
   randomness: 1
   flockSize: 20
   prefab: {fileID: 1112338128624330, guid: e7965cb5f3b6b49439772edd4131b2b0, type: 3}
-  chasee: {fileID: 0}
+  chasee: {fileID: 5587217149191248387, guid: f9c55b75eccf58145a759920b37d7e2d, type: 3}
   flockCenter: {x: 0, y: 0, z: 0}
   flockVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &1503749796
