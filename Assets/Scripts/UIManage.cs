@@ -29,6 +29,7 @@ public class UIManage : MonoBehaviour
 
 	public Text scoreText;
 	int score;
+	int planetsUnlocked;
 
 	public int numAliensHired;
 	public int fashionItems;
@@ -158,6 +159,8 @@ public class UIManage : MonoBehaviour
 			SuccessSound.Play();
 			MovePlanetText.enabled = true;
 			removeTextTime = showTextTime + Time.time;
+			score++;
+			scoreText.text = "Score: " + score;
 			//if new planet, give 1 point
 		}
 		else if (result == 3)

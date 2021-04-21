@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6669145033845781178}
   - component: {fileID: 6669145033845781179}
   - component: {fileID: 6669145033845781176}
+  - component: {fileID: -7684931370470564474}
   m_Layer: 0
   m_Name: TheShow
   m_TagString: Untagged
@@ -130,3 +131,15 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &-7684931370470564474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6669145033845781177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2d3ef8f1ecbee48a05d1bbf187e241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
