@@ -21,6 +21,7 @@ public class UIManage : MonoBehaviour
 	[SerializeField] private Text LoseClothText;
 	[SerializeField] private Text FashionShowText;
 	[SerializeField] private Text FashionShowFailText;
+	public Text ClothesText;
 
 	[SerializeField] private AudioSource ClickSound;
 	[SerializeField] private AudioSource SuccessSound;
@@ -32,12 +33,14 @@ public class UIManage : MonoBehaviour
 	public int numAliensHired;
 	public int fashionItems;
 
-	[SerializeField] private GameObject FashionItem; //eventually randomize
-	Vector3 infront = new Vector3(0, 2, 0);
+	// [SerializeField] private GameObject FashionItem; //eventually randomize
+	// Vector3 infront = new Vector3(0, 2, 0);
 
-	public GameObject model;
+	// public GameObject model;
 	public GameObject recruit;
 	private Vector3 recruitpos;
+
+	public GameObject theShow;
 
 	// Start is called before the first frame update
 	void Start()
@@ -57,6 +60,7 @@ public class UIManage : MonoBehaviour
 
 		score = 0;
 		scoreText.text = "Score: " + score;
+		ClothesText.text = ""+fashionItems;
 
 		numAliensHired = 0;
 		fashionItems = 0;
@@ -65,6 +69,17 @@ public class UIManage : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if ((RecruitText.enabled || RecruitFailText.enabled || ScavengeText || ScavengeFailText || LoseTurnText || MovePlanetText ||
+			LoseClothText || FashionShowText || FashionShowFailText) && (Time.time < removeTextTime)){
+			RecruitButton.enabled = false;
+			ScavengeButton.enabled = false;
+			SpecialButton.enabled = false;
+		}
+		else {
+			RecruitButton.enabled = true;
+			ScavengeButton.enabled = true;
+			SpecialButton.enabled = true;
+		}
 		if (RecruitText.enabled && (Time.time >= removeTextTime)) RecruitText.enabled = false;
 		if (RecruitFailText.enabled && (Time.time >= removeTextTime)) RecruitFailText.enabled = false;
 		if (ScavengeText.enabled && (Time.time >= removeTextTime)) ScavengeText.enabled = false;
@@ -114,9 +129,10 @@ public class UIManage : MonoBehaviour
 			ScavengeText.enabled = true;
 			removeTextTime = showTextTime + Time.time;
 			//make 'cloth' object appear
-			Instantiate(FashionItem, transform.position + (transform.forward * 2), transform.rotation);
+			// Instantiate(FashionItem, transform.position + (transform.forward * 2), transform.rotation);
 			score++;
 			fashionItems++;
+			ClothesText.text = ""+fashionItems;
 			scoreText.text = "Score: " + score;
 		}
 		else
@@ -149,21 +165,32 @@ public class UIManage : MonoBehaviour
 			FailSound.Play();
 			LoseClothText.enabled = true;
 			removeTextTime = showTextTime + Time.time;
+			fashionItems--;
+			ClothesText.text = ""+fashionItems;
 			//make 'cloth' object appear and disappear
 		}
 		else
 		{ //fashion show time
 			if (numAliensHired >= 3)
 			{
+				GameObject show1, show2, show3, show4;
 				SuccessSound.Play();
 				FashionShowText.enabled = true;
 				removeTextTime = showTextTime + Time.time;
 				score = score + 3;
 				scoreText.text = "Score: " + score;
 				numAliensHired = numAliensHired - 3;
-				Instantiate(model, transform.position+transform.forward, transform.rotation);
-				Instantiate(model, transform.position+transform.forward+transform.right, transform.rotation);
-				Instantiate(model, transform.position+transform.forward-transform.right, transform.rotation);
+				show1 = Instantiate(theShow, new Vector3(-99, 3, 104), transform.rotation);
+				show2 = Instantiate(theShow, new Vector3(102, 3, 52), transform.rotation);
+				show3 = Instantiate(theShow, new Vector3(56, 4, -48), transform.rotation);
+				show4 = Instantiate(theShow, new Vector3(-108, 3, -82), transform.rotation);
+				Destroy(show1, 20);
+				Destroy(show2, 20);
+				Destroy(show3, 20);
+				Destroy(show4, 20);
+				// Instantiate(model, transform.position+transform.forward, transform.rotation);
+				// Instantiate(model, transform.position+transform.forward+transform.right, transform.rotation);
+				// Instantiate(model, transform.position+transform.forward-transform.right, transform.rotation);
 			}
 			else
 			{
