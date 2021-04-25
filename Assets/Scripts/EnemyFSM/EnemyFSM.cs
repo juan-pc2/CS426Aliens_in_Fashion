@@ -43,6 +43,8 @@ public class EnemyFSM : FSM
         FindNextPoint();
     }
 
+    
+
     protected override void FSMUpdate()
     {
         GameObject objPlayer = GameObject.FindGameObjectWithTag("Player");

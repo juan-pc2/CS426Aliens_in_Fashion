@@ -21,9 +21,11 @@ Unity Assets:
 <a href="https://assetstore.unity.com/packages/vfx/particles/sherbb-s-particle-collection-170798">Sherbb's Particle Collection by Shrebb</a>  
 
 Font:  
+<a href="https://www.dafont.com/a-space.font">A Space by Studio Typo</a>  
 <a href="https://fonts.google.com/specimen/Play#standard-styles">Play by Jonas Hecksher</a>  
 
 Texture/Pattern Images:  
+<a href="https://www.freepik.com/free-photo/3d-technology-geometric-black-background_13301681.htm#page=7&query=space+background&position=16">3d technology geometric black background by rawpixel.com</a>  
 <a href="https://www.freepik.com/free-photo/stone-wall-texture-background-vintage-filter_1273893.htm#page=1&query=stone%20pattern&position=42">Stone wall texture or background - vintage filter by aopsan</a>  
 <a href="https://www.freepik.com/free-photo/tropical-green-leaves-background_4102585.htm#page=1&query=green%20wall&position=40">Tropical green leaves background by rawpixel.com</a>  
 <a href="https://www.freepik.com/free-photo/beautiful-old-rock-texture_13235534.htm#page=5&query=wall+texture&position=16">Beautiful old rock texture by wirestock</a>  
@@ -45,6 +47,7 @@ Scripts:
 <a href="https://gist.github.com/canyuva/8338f1cf679440f7950313e85718e006">Unity 5 Enemy Follow to Player C# Script by canyuva</a>  
 <a href="http://wiki.unity3d.com/index.php?title=Flocking">Flocking by shinriyo & Benoit FOULETIER</a>  
 <a href="https://www.youtube.com/watch?v=fnBPh35Bwwc">HOW TO CREATE PORTALS WITH UNITY AND C# - EASY TUTORIAL by Blackthornprod</a>  
+<a href="https://www.youtube.com/watch?v=RsgiYqLID-U">MAIN MENU in Unity - Unity UI tutorial by Coco Code</a>  
 
 ## Assignment 8
 
@@ -56,3 +59,16 @@ UI Design:
 Sound Design:  
 See Sounds and Music credits and Design Document.  
 
+## Assignment 9
+
+Shader Design:  
+-Toon shader applied to player to increase visibility  
+-Lava shader applied to make floor more vibrant and to make it move  
+
+Modifications in response to alpha feedback:  
+-Player character turns faster  
+-Camera and player repositioned so the player can see more of the environment  
+-Settings and help screens added  
+-Add new font to match game theme better, use TextMeshPro and add font material presets to have more flexibility in editing text  
+-Menu and credits screens added  
+-Win screen added  
