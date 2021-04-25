@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManage : MonoBehaviour
 {
@@ -90,6 +91,12 @@ public class UIManage : MonoBehaviour
 		if (LoseClothText.enabled && (Time.time >= removeTextTime)) LoseClothText.enabled = false;
 		if (FashionShowText.enabled && (Time.time >= removeTextTime)) FashionShowText.enabled = false;
 		if (FashionShowFailText.enabled && (Time.time >= removeTextTime)) FashionShowFailText.enabled = false;
+
+		// win condition
+		if(score >= 5)
+        {
+			SceneManager.LoadScene("Win");
+		}
 	}
 
 	void RecruitOnClick()

@@ -3440,7 +3440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -16.3}
+  m_AnchoredPosition: {x: 50, y: -10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &842033357
@@ -3466,7 +3466,9 @@ MonoBehaviour:
   m_text: '"Aliens in Fashion" is a turn-based collecting computer game or board
     game for people ages 6 and up. In this game, players manage aliens and fashion
     items, dress up aliens, and host fashion shows. There are 4 planets with various
-    fashion items and different types of aliens to be hired from.'
+    fashion items and different types of aliens to be hired from. To host a fashion
+    show, you must have recruited at least three aliens. To win, you must unlock
+    and visit every planet.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 59dd8fd013ee9984ab024b72b9e176a8, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 9d1d8ea25bd0542439e24f5166f03cf6, type: 2}
