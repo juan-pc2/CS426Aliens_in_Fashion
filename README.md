@@ -34,7 +34,8 @@ Texture/Pattern Images:
 <a href="https://www.pexels.com/photo/selective-focus-photography-of-green-plants-948099/">Selective focus photography of green plants by Irina Iriser</a>  
 <a href="https://www.pexels.com/photo/cold-snow-pattern-texture-6609924/">Cold snow pattern texture by Karolina Grabowska</a>  
 <a href="https://www.pexels.com/photo/red-and-orange-solar-flare-73873/">Red and orange solar flare by Pixabay</a>  
-<a href="https://www.pexels.com/photo/black-and-white-carbon-pattern-2092075/">Black and white carbon pattern by Engin Akyurt</a> 
+<a href="https://www.pexels.com/photo/black-and-white-carbon-pattern-2092075/">Black and white carbon pattern by Engin Akyurt</a>
+<a href="https://assetstore.unity.com/packages/vfx/shaders/flexible-cel-shader-built-in-pipeline-112979/">Flexible Cel Shader by Zachary Peterson</a>
 
 Sounds and Music:  
 <a href="https://freesound.org/people/old_waveplay/sounds/399934/">Short Click/Snap Perc.wav by Waveplay</a>  
